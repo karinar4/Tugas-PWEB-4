@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Weather</title>
+
+        <!-- Custom fonts for this template-->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
+
+        <!-- Custom styles for this template-->
+        <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+        <style>
+            .container-flex{
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+            }
+            .input-custom{
+                background: none;
+                outline: none;
+                border: none; 
+                margin: 5px;
+            }
+        </style>
+    </head>
+
+    <body style="background-image: url(white-cloud-blue-sky.jpg); background-size: cover;">
+        <div class="container-flex">
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card shadow py-2" style="border-radius: 15px;">
+                    <div class="card-body" style="height: 300px">
+                        <div class="text-center text-black">
+                            <form id="form-submit">
+                                <div style="display: flex; align-items: center; border-radius: 20px; background-color: rgb(230, 230, 230);">
+                                    <div class="col" style="padding: 0px;">
+                                        <input type="text" id="city" placeholder="City: ex. Surabaya" class="input-custom" style="width: 100%; margin-left: 10px;">
+                                    </div>
+                                    <div class="col-auto" style="padding: 0px;">
+                                        <button type="submit" style="background: none; border: none; width: 40px;"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <br><br>
+                            
+                            <!-- <div id="weatherIcon"><img src=""></div> -->
+                            <img id="weatherIcon" src="">
+                            <div id="city-name"></div>
+                            <div id="city-temp"></div>
+                            <div id="city-weather"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
